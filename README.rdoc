@@ -2,6 +2,6 @@
 
 This is my first independently-built Rails app. It's a simple HTML generator for fashion label The Whitepepper, built in an attempt to thwart the Shopify text editor which is next to impossible to work with for staff who aren't familiar with HTML. 
 
-Parameters are entered into the forms and, when submitted, generate a raw HTML template 
+Parameters are entered into the forms and, when submitted, generate a raw HTML template which can be pasted into the HTML editor. Very low-tech. 
 
 I am very aware that the code in this is pretty shocking; I do intend to go back and establish the best-practice methods of accomplishing this (an alternative to conditional logic in views for starters), but we needed the tool urgently, so here it is! 
