@@ -48,9 +48,24 @@
 <li id="tab1" class="active"><p><%= @tab1.productparagraph %></p><% if @tab1.bullet1.present? %><ul><% end %><% if @tab1.bullet1.present? %><li><% end %><%= @tab1.bullet1 if @tab1.bullet1.present? %><% if @tab1.bullet1.present? %></li><% end %><% if @tab1.bullet2.present? %><li><% end %><%= @tab1.bullet2 if @tab1.bullet2.present? %><% if @tab1.bullet2.present? %></li><% end %><% if @tab1.bullet3.present? %><li><% end %><%= @tab1.bullet3 if @tab1.bullet3.present? %><% if @tab1.bullet3.present? %></li><% end %><% if @tab1.bullet4.present? %><li><% end %><%= @tab1.bullet4 if @tab1.bullet4.present? %><% if @tab1.bullet4.present? %></li><% end %><% if @tab1.bullet5.present? %><li><% end %><%= @tab1.bullet5 if @tab1.bullet5.present? %><% if @tab1.bullet5.present? %></li><% end %><% if @tab1.bullet1.present? %></ul><% end %><% if @tab1.sku.present? %><b><% end %><%= @tab1.sku %><% if @tab1.sku.present? %></b><% end %></li>
 <!-- PASTE THE SIZING INFORMATION BELOW THIS LINE - DO NOT PUBLISH THE PRODUCT WITHOUT SIZING OR CARE INFORMATION -->
 </textarea>
+   </div>
 </div>
-</div>
+<div class="row">
+<div class="col-md-12">
+  <%= link_to 'Edit', edit_tab1_path(@tab1) %> |
+  <%= link_to 'Back', tab1s_path %>
 </div>
 
-<%= link_to 'Edit', edit_tab1_path(@tab1) %> |
-<%= link_to 'Back', tab1s_path %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>If the product is an item of clothing with specific measurements <%= link_to 'click here', "/tab2s" %> </h3>
+    </div>
+    <div class="col-md-4">
+      <h3>If the product is an accessory with specific measurements</h3>
+    </div>
+    <div class="col-md-4">
+      <h3>If the product is an item of clothing or accessory in one size only</h3>
+    </div>
+  </div>
+</div>
