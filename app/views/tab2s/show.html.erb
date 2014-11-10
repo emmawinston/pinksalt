@@ -1,0 +1,138 @@
+<p id="notice"><%= notice %></p>
+
+<h2>
+  Size chart for <%= @tab2.productname %>
+</h2>
+
+<table width="100%" cellpadding="3" cellspacing="0">
+<tbody>
+<% if @tab2.modelsize.present? or @tab2.modelheight.present? or @tab2.modelwears.present? %>
+  <tr>
+    <td colspan="2"><b>Model:</b></td>
+    <% if @tab2.modelsize.present? %><td>Size <%= @tab2.modelsize %></td><% end %>
+    <% if @tab2.modelheight.present? %><td>Height <%= @tab2.modelheight %></td><% end %>
+    <% if @tab2.modelwears.present? %><td>Wears <%= @tab2.modelwears %></td><% end %>
+</tr>
+<% end %>
+<tr>
+<td></td>
+<td><b>X-SMALL<br />(UK6-8)</b></td>
+<td><b>SMALL<br />(UK8-10)</b></td>
+<td><b>MEDIUM<br />(UK10-12)</b></td>
+<td><b>LARGE<br />(UK12-14)</b></td>
+</tr>
+<% if @tab2.xslength.present? or @tab2.slength.present? or @tab2.mlength.present? or @tab2.llength.present? %>
+<tr>
+<td><b>Length</b></td>
+<td><% if @tab2.slength.present? %><%= @tab2.xslength %><% end %></td>
+<td><% if @tab2.slength.present? %><%= @tab2.slength %><% end %></td>
+<td><% if @tab2.mlength.present? %><%= @tab2.mlength %><% end %></td>
+<td><% if @tab2.llength.present? %><%= @tab2.llength %><% end %></td>
+</tr>
+<% end %>
+<% if @tab2.xswaist.present? or @tab2.swaist.present? or @tab2.mwaist.present? or @tab2.lwaist.present? %>
+<tr>
+<td><b>Waist</b></td>
+<td><% if @tab2.xswaist.present? %><%= @tab2.xswaist %><% end %></td>
+<td><% if @tab2.swaist.present? %><%= @tab2.swaist %><% end %></td>
+<td><% if @tab2.mwaist.present? %><%= @tab2.mwaist %><% end %></td>
+<td><% if @tab2.lwaist.present? %><%= @tab2.lwaist %><% end %></td>
+</tr>
+<% end %>
+<% if @tab2.xsbust.present? or @tab2.sbust.present? or @tab2.mbust.present? or @tab2.lbust.present? %>
+<tr>
+<td><b>Bust</b></td>
+<td><% if @tab2.xsbust.present? %><%= @tab2.xsbust %><% end %></td>
+<td><% if @tab2.sbust.present? %><%= @tab2.sbust %><% end %></td>
+<td><% if @tab2.mbust.present? %><%= @tab2.mbust %><% end %></td>
+<td><% if @tab2.lbust.present? %><%= @tab2.lbust %><% end %></td>
+</tr>
+<% end %>
+<% if @tab2.xssleeve.present? or @tab2.ssleeve.present? or @tab2.msleeve.present? or @tab2.lsleeve.present? %><tr>
+<td><b>Sleeve</b></td>
+<td><% if @tab2.xssleeve.present? %><%= @tab2.xssleeve %><% end %></td>
+<td><% if @tab2.ssleeve.present? %><%= @tab2.ssleeve %><% end %></td>
+<td><% if @tab2.msleeve.present? %><%= @tab2.msleeve %><% end %></td>
+<td><% if @tab2.lsleeve.present? %><%= @tab2.lsleeve %><% end %></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_tab2_path(@tab2), :class => "btn" %></h3> 
+    </div>
+   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Copy and paste this code in the Shopify HTML editor. This will become the second tab for the product '<%= @tab2.productname %>'</h3>
+<textarea>
+<li id="tab2"><!-- SIZE STARTS HERE -->
+<table width="100%" cellpadding="3" cellspacing="0">
+<tbody>
+<% if @tab2.modelsize.present? or @tab2.modelheight.present? or @tab2.modelwears.present? %>
+  <tr>
+    <td colspan="2"><b>Model:</b></td>
+    <% if @tab2.modelsize.present? %><td>Size <%= @tab2.modelsize %></td><% end %>
+    <% if @tab2.modelheight.present? %><td>Height <%= @tab2.modelheight %></td><% end %>
+    <% if @tab2.modelwears.present? %><td>Wears <%= @tab2.modelwears %></td><% end %>
+</tr>
+<% end %>
+<tr>
+<td></td>
+<td><b>X-SMALL<br />(UK6-8)</b></td>
+<td><b>SMALL<br />(UK8-10)</b></td>
+<td><b>MEDIUM<br />(UK10-12)</b></td>
+<td><b>LARGE<br />(UK12-14)</b></td>
+</tr>
+<% if @tab2.xslength.present? or @tab2.slength.present? or @tab2.mlength.present? or @tab2.llength.present? %>
+<tr>
+<td><b>Length</b></td>
+<td><% if @tab2.slength.present? %><%= @tab2.xslength %><% end %></td>
+<td><% if @tab2.slength.present? %><%= @tab2.slength %><% end %></td>
+<td><% if @tab2.mlength.present? %><%= @tab2.mlength %><% end %></td>
+<td><% if @tab2.llength.present? %><%= @tab2.llength %><% end %></td>
+</tr>
+<% end %>
+<% if @tab2.xswaist.present? or @tab2.swaist.present? or @tab2.mwaist.present? or @tab2.lwaist.present? %>
+<tr>
+<td><b>Waist</b></td>
+<td><% if @tab2.xswaist.present? %><%= @tab2.xswaist %><% end %></td>
+<td><% if @tab2.swaist.present? %><%= @tab2.swaist %><% end %></td>
+<td><% if @tab2.mwaist.present? %><%= @tab2.mwaist %><% end %></td>
+<td><% if @tab2.lwaist.present? %><%= @tab2.lwaist %><% end %></td>
+</tr>
+<% end %>
+<% if @tab2.xsbust.present? or @tab2.sbust.present? or @tab2.mbust.present? or @tab2.lbust.present? %>
+<tr>
+<td><b>Bust</b></td>
+<td><% if @tab2.xsbust.present? %><%= @tab2.xsbust %><% end %></td>
+<td><% if @tab2.sbust.present? %><%= @tab2.sbust %><% end %></td>
+<td><% if @tab2.mbust.present? %><%= @tab2.mbust %><% end %></td>
+<td><% if @tab2.lbust.present? %><%= @tab2.lbust %><% end %></td>
+</tr>
+<% end %>
+<% if @tab2.xssleeve.present? or @tab2.ssleeve.present? or @tab2.msleeve.present? or @tab2.lsleeve.present? %><tr>
+<td><b>Sleeve</b></td>
+<td><% if @tab2.xssleeve.present? %><%= @tab2.xssleeve %><% end %></td>
+<td><% if @tab2.ssleeve.present? %><%= @tab2.ssleeve %><% end %></td>
+<td><% if @tab2.msleeve.present? %><%= @tab2.msleeve %><% end %></td>
+<td><% if @tab2.lsleeve.present? %><%= @tab2.lsleeve %><% end %></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+<br/>
+<a class="zoom" href="http://cdn.shopify.com/s/files/1/0156/6472/files/howtomeasure_1.png?4675">How to measure</a></li>
+</textarea>
+    </div>
+  </div>
+</div>
+  
+<%= link_to 'Edit', edit_tab2_path(@tab2) %> |
+<%= link_to 'Back', tab2s_path %>
