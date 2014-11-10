@@ -1,0 +1,63 @@
+<h1>Listing tab2s</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Productname</th>
+      <th>Modelsize</th>
+      <th>Modelheight</th>
+      <th>Modelwears</th>
+      <th>Xslength</th>
+      <th>Slength</th>
+      <th>Mlength</th>
+      <th>Llength</th>
+      <th>Xswaist</th>
+      <th>Swaist</th>
+      <th>Mwaist</th>
+      <th>Lwaist</th>
+      <th>Xsbust</th>
+      <th>Sbust</th>
+      <th>Mbust</th>
+      <th>Lbust</th>
+      <th>Xssleeve</th>
+      <th>Ssleeve</th>
+      <th>Msleeve</th>
+      <th>Lsleeve</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tab2s.each do |tab2| %>
+      <tr>
+        <td><%= tab2.productname %></td>
+        <td><%= tab2.modelsize %></td>
+        <td><%= tab2.modelheight %></td>
+        <td><%= tab2.modelwears %></td>
+        <td><%= tab2.xslength %></td>
+        <td><%= tab2.slength %></td>
+        <td><%= tab2.mlength %></td>
+        <td><%= tab2.llength %></td>
+        <td><%= tab2.xswaist %></td>
+        <td><%= tab2.swaist %></td>
+        <td><%= tab2.mwaist %></td>
+        <td><%= tab2.lwaist %></td>
+        <td><%= tab2.xsbust %></td>
+        <td><%= tab2.sbust %></td>
+        <td><%= tab2.mbust %></td>
+        <td><%= tab2.lbust %></td>
+        <td><%= tab2.xssleeve %></td>
+        <td><%= tab2.ssleeve %></td>
+        <td><%= tab2.msleeve %></td>
+        <td><%= tab2.lsleeve %></td>
+        <td><%= link_to 'Show', tab2 %></td>
+        <td><%= link_to 'Edit', edit_tab2_path(tab2) %></td>
+        <td><%= link_to 'Destroy', tab2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tab2', new_tab2_path %>

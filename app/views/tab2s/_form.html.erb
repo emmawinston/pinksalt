@@ -1,0 +1,97 @@
+<%= form_for(@tab2) do |f| %>
+  <% if @tab2.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tab2.errors.count, "error") %> prohibited this tab2 from being saved:</h2>
+
+      <ul>
+      <% @tab2.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :productname %><br>
+    <%= f.text_field :productname %>
+  </div>
+  <div class="field">
+    <%= f.label :modelsize %><br>
+    <%= f.text_field :modelsize %>
+  </div>
+  <div class="field">
+    <%= f.label :modelheight %><br>
+    <%= f.text_field :modelheight %>
+  </div>
+  <div class="field">
+    <%= f.label :modelwears %><br>
+    <%= f.text_field :modelwears %>
+  </div>
+  <div class="field">
+    <%= f.label :xslength %><br>
+    <%= f.text_field :xslength %>
+  </div>
+  <div class="field">
+    <%= f.label :slength %><br>
+    <%= f.text_field :slength %>
+  </div>
+  <div class="field">
+    <%= f.label :mlength %><br>
+    <%= f.text_field :mlength %>
+  </div>
+  <div class="field">
+    <%= f.label :llength %><br>
+    <%= f.text_field :llength %>
+  </div>
+  <div class="field">
+    <%= f.label :xswaist %><br>
+    <%= f.text_field :xswaist %>
+  </div>
+  <div class="field">
+    <%= f.label :swaist %><br>
+    <%= f.text_field :swaist %>
+  </div>
+  <div class="field">
+    <%= f.label :mwaist %><br>
+    <%= f.text_field :mwaist %>
+  </div>
+  <div class="field">
+    <%= f.label :lwaist %><br>
+    <%= f.text_field :lwaist %>
+  </div>
+  <div class="field">
+    <%= f.label :xsbust %><br>
+    <%= f.text_field :xsbust %>
+  </div>
+  <div class="field">
+    <%= f.label :sbust %><br>
+    <%= f.text_field :sbust %>
+  </div>
+  <div class="field">
+    <%= f.label :mbust %><br>
+    <%= f.text_field :mbust %>
+  </div>
+  <div class="field">
+    <%= f.label :lbust %><br>
+    <%= f.text_field :lbust %>
+  </div>
+  <div class="field">
+    <%= f.label :xssleeve %><br>
+    <%= f.text_field :xssleeve %>
+  </div>
+  <div class="field">
+    <%= f.label :ssleeve %><br>
+    <%= f.text_field :ssleeve %>
+  </div>
+  <div class="field">
+    <%= f.label :msleeve %><br>
+    <%= f.text_field :msleeve %>
+  </div>
+  <div class="field">
+    <%= f.label :lsleeve %><br>
+    <%= f.text_field :lsleeve %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

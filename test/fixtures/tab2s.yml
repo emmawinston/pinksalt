@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productname: MyString
+  modelsize: MyString
+  modelheight: MyString
+  modelwears: MyString
+  xslength: MyString
+  slength: MyString
+  mlength: MyString
+  llength: MyString
+  xswaist: MyString
+  swaist: MyString
+  mwaist: MyString
+  lwaist: MyString
+  xsbust: MyString
+  sbust: MyString
+  mbust: MyString
+  lbust: MyString
+  xssleeve: MyString
+  ssleeve: MyString
+  msleeve: MyString
+  lsleeve: MyString
+
+two:
+  productname: MyString
+  modelsize: MyString
+  modelheight: MyString
+  modelwears: MyString
+  xslength: MyString
+  slength: MyString
+  mlength: MyString
+  llength: MyString
+  xswaist: MyString
+  swaist: MyString
+  mwaist: MyString
+  lwaist: MyString
+  xsbust: MyString
+  sbust: MyString
+  mbust: MyString
+  lbust: MyString
+  xssleeve: MyString
+  ssleeve: MyString
+  msleeve: MyString
+  lsleeve: MyString
