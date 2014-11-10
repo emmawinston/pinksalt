@@ -20,3 +20,16 @@ th, td { border-bottom: 1px solid #DDD; border-right: 1px solid #ddd;}
 table {
   border: 1px solid #ddd;
 }
+.navbar-inverse {
+    background-color: #f9adb9;
+    border-color: #ff657d;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.btn {
+  background-color: #f9adb9;
+}
+
+.centered pre {
+  text-align: left;
+}
