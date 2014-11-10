@@ -33,3 +33,7 @@ table {
 .centered pre {
   text-align: left;
 }
+
+pre{
+    white-space: pre-wrap;
+}

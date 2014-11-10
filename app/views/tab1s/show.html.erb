@@ -44,12 +44,10 @@
   <div class="row">
     <div class="col-md-12 centered">
 <h3>Copy and paste this code in the Shopify HTML editor. This is the first tab for the product '<%= @tab1.productname %>'</h3>
-<pre>
-  <xmp>
+<textarea>
 <li id="tab1" class="active"><p><%= @tab1.productparagraph %></p><% if @tab1.bullet1.present? %><ul><% end %><% if @tab1.bullet1.present? %><li><% end %><%= @tab1.bullet1 if @tab1.bullet1.present? %><% if @tab1.bullet1.present? %></li><% end %><% if @tab1.bullet2.present? %><li><% end %><%= @tab1.bullet2 if @tab1.bullet2.present? %><% if @tab1.bullet2.present? %></li><% end %><% if @tab1.bullet3.present? %><li><% end %><%= @tab1.bullet3 if @tab1.bullet3.present? %><% if @tab1.bullet3.present? %></li><% end %><% if @tab1.bullet4.present? %><li><% end %><%= @tab1.bullet4 if @tab1.bullet4.present? %><% if @tab1.bullet4.present? %></li><% end %><% if @tab1.bullet5.present? %><li><% end %><%= @tab1.bullet5 if @tab1.bullet5.present? %><% if @tab1.bullet5.present? %></li><% end %><% if @tab1.bullet1.present? %></ul><% end %><% if @tab1.sku.present? %><b><% end %><%= @tab1.sku %><% if @tab1.sku.present? %></b><% end %></li>
 <!-- PASTE THE SIZING INFORMATION BELOW THIS LINE - DO NOT PUBLISH THE PRODUCT WITHOUT SIZING OR CARE INFORMATION -->
-  </xmp>
-</pre>
+</textarea>
 </div>
 </div>
 </div>
