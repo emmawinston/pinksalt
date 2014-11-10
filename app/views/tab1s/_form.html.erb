@@ -1,0 +1,49 @@
+<%= form_for(@tab1) do |f| %>
+  <% if @tab1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tab1.errors.count, "error") %> prohibited this tab1 from being saved:</h2>
+
+      <ul>
+      <% @tab1.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :productname %><br>
+    <%= f.text_field :productname %>
+  </div>
+  <div class="field">
+    <%= f.label :productparagraph %><br>
+    <%= f.text_area :productparagraph %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet1 %><br>
+    <%= f.text_field :bullet1 %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet2 %><br>
+    <%= f.text_field :bullet2 %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet3 %><br>
+    <%= f.text_field :bullet3 %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet4 %><br>
+    <%= f.text_field :bullet4 %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet5 %><br>
+    <%= f.text_field :bullet5 %>
+  </div>
+  <div class="field">
+    <%= f.label :sku %><br>
+    <%= f.text_field :sku %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

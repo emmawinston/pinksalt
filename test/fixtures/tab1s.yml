@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productname: MyString
+  productparagraph: MyText
+  bullet1: MyString
+  bullet2: MyString
+  bullet3: MyString
+  bullet4: MyString
+  bullet5: MyString
+  sku: MyString
+
+two:
+  productname: MyString
+  productparagraph: MyText
+  bullet1: MyString
+  bullet2: MyString
+  bullet3: MyString
+  bullet4: MyString
+  bullet5: MyString
+  sku: MyString
