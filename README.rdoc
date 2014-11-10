@@ -1,6 +1,6 @@
 == README
 
-This is my first independently-built Rails app. It's a simple HTML generator for fashion label The Whitepepper, built in an attempt to thwart the Shopify text editor which is next to impossible to work with for staff who aren't familiar with HTML. 
+This is Pinksalt, my first independently-built Rails app. Pinksalt is a simple HTML generator for fashion label The Whitepepper, built in an attempt to thwart the Shopify text editor which is next to impossible to work with for staff who aren't familiar with HTML. 
 
 Parameters are entered into the forms and, when submitted, generate a raw HTML template which can be pasted into the HTML editor. Very low-tech. 
 
