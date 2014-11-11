@@ -5,7 +5,7 @@
   <%= @tab2b.productname %>
 </p>
 
-<p>
+<!--p>
   <strong>Bagwidth:</strong>
   <%= @tab2b.bagwidth %>
 </p>
@@ -23,7 +23,89 @@
 <p>
   <strong>Bagstraplength:</strong>
   <%= @tab2b.bagstraplength %>
-</p>
+</p-->
+
+<table width="100%" cellpadding="3" cellspacing="0">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>Measurements</th>
+  </tr>
+    <% if @tab2b.bagwidth.present? %>
+  <tr>
+    <td><b>Width</b></td>
+    <td><%= @tab2b.bagwidth %></td>
+  </tr><% end %> 
+    <% if @tab2b.bagheight.present? %>
+  <tr>
+    <td><b>Height</b></td>
+    <td><%= @tab2b.bagheight %></td>
+  </tr> 
+  <% end %> 
+    <% if @tab2b.bagdepth.present? %>
+  <tr>
+    <td><b>Bag Depth</b></td>
+    <td><%= @tab2b.bagdepth %></td>
+  </tr> 
+<% end %> 
+  <% if @tab2b.bagstraplength.present? %>
+  <tr>
+    <td><b>Strap Length</b></td>
+    <td><%= @tab2b.bagstraplength %></td>
+  </tr> 
+  <% end %>  
+  </tbody>
+  </table>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_tab2a_path(@tab2a), :class => "btn" %></h3> 
+    </div>
+   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Copy and paste this code in the Shopify HTML editor. This will become the second tab for the product '<%= @tab2a.productname %>'</h3>
+<textarea>
+<li id="tab2">
+  <table width="100%" cellpadding="3" cellspacing="0">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>Measurements</th>
+  </tr>
+    <% if @tab2b.bagwidth.present? %>
+  <tr>
+    <td><b>Width</b></td>
+    <td><%= @tab2b.bagwidth %></td>
+  </tr><% end %> 
+    <% if @tab2b.bagheight.present? %>
+  <tr>
+    <td><b>Height</b></td>
+    <td><%= @tab2b.bagheight %></td>
+  </tr> 
+  <% end %> 
+    <% if @tab2b.bagdepth.present? %>
+  <tr>
+    <td><b>Bag Depth</b></td>
+    <td><%= @tab2b.bagdepth %></td>
+  </tr> 
+<% end %> 
+  <% if @tab2b.bagstraplength.present? %>
+  <tr>
+    <td><b>Strap Length</b></td>
+    <td><%= @tab2b.bagstraplength %></td>
+  </tr> 
+  <% end %>  
+  </tbody>
+  </table>
+  <br/>
+  <a class="zoom" href="http://cdn.shopify.com/s/files/1/0156/6472/files/howtomeasure_1.png?4675" target="_blank">How to measure</a>
+</li>
+      </textarea>
 
 <%= link_to 'Edit', edit_tab2b_path(@tab2b) %> |
 <%= link_to 'Back', tab2bs_path %>
