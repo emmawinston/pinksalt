@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Product Name</th>
-      <th>Model Size</th>
+      <!--th>Model Size</th>
       <th>Model Height</th>
       <th>Model Wears</th>
       <th>XS Length</th>
@@ -22,7 +22,7 @@
       <th>X Sleeve</th>
       <th>S Sleeve</th>
       <th>M Sleeve</th>
-      <th>L Sleeve</th>
+      <th>L Sleeve</th-->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -31,7 +31,7 @@
     <% @tab2s.each do |tab2| %>
       <tr>
         <td><%= tab2.productname %></td>
-        <td><%= tab2.modelsize %></td>
+        <!--td><%= tab2.modelsize %></td>
         <td><%= tab2.modelheight %></td>
         <td><%= tab2.modelwears %></td>
         <td><%= tab2.xslength %></td>
@@ -49,10 +49,10 @@
         <td><%= tab2.xssleeve %></td>
         <td><%= tab2.ssleeve %></td>
         <td><%= tab2.msleeve %></td>
-        <td><%= tab2.lsleeve %></td>
+        <td><%= tab2.lsleeve %></td-->
         <td><%= link_to 'Show', tab2 %></td>
         <td><%= link_to 'Edit', edit_tab2_path(tab2) %></td>
-        <td><%= link_to 'Destroy', tab2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', tab2, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

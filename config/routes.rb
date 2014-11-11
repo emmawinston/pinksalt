@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root :to => redirect('/tab1s')  
+  
   resources :tab2s
 
   resources :tab1s
