@@ -1,0 +1,61 @@
+<%= form_for(@tab2a) do |f| %>
+  <% if @tab2a.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tab2a.errors.count, "error") %> prohibited this tab2a from being saved:</h2>
+
+      <ul>
+      <% @tab2a.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :productname %><br>
+    <%= f.text_field :productname %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorywidth %><br>
+    <%= f.text_field :accessorywidth %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorylength %><br>
+    <%= f.text_field :accessorylength %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorydepth %><br>
+    <%= f.text_field :accessorydepth %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorystraplength %><br>
+    <%= f.text_field :accessorystraplength %>
+  </div>
+  <div class="field">
+    <%= f.label :accessoryminlength %><br>
+    <%= f.text_field :accessoryminlength %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorymaxlength %><br>
+    <%= f.text_field :accessorymaxlength %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorychainlength %><br>
+    <%= f.text_field :accessorychainlength %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorypendantwidth %><br>
+    <%= f.text_field :accessorypendantwidth %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorydiameter %><br>
+    <%= f.text_field :accessorydiameter %>
+  </div>
+  <div class="field">
+    <%= f.label :accessorylensdiameter %><br>
+    <%= f.text_field :accessorylensdiameter %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

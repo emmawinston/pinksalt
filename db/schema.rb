@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141110164433) do
+ActiveRecord::Schema.define(version: 20141111100730) do
 
   create_table "tab1s", force: true do |t|
     t.string   "productname"
@@ -22,6 +22,22 @@ ActiveRecord::Schema.define(version: 20141110164433) do
     t.string   "bullet4"
     t.string   "bullet5"
     t.string   "sku"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tab2as", force: true do |t|
+    t.string   "productname"
+    t.string   "accessorywidth"
+    t.string   "accessorylength"
+    t.string   "accessorydepth"
+    t.string   "accessorystraplength"
+    t.string   "accessoryminlength"
+    t.string   "accessorymaxlength"
+    t.string   "accessorychainlength"
+    t.string   "accessorypendantwidth"
+    t.string   "accessorydiameter"
+    t.string   "accessorylensdiameter"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

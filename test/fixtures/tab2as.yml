@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productname: MyString
+  accessorywidth: MyString
+  accessorylength: MyString
+  accessorydepth: MyString
+  accessorystraplength: MyString
+  accessoryminlength: MyString
+  accessorymaxlength: MyString
+  accessorychainlength: MyString
+  accessorypendantwidth: MyString
+  accessorydiameter: MyString
+  accessorylensdiameter: MyString
+
+two:
+  productname: MyString
+  accessorywidth: MyString
+  accessorylength: MyString
+  accessorydepth: MyString
+  accessorystraplength: MyString
+  accessoryminlength: MyString
+  accessorymaxlength: MyString
+  accessorychainlength: MyString
+  accessorypendantwidth: MyString
+  accessorydiameter: MyString
+  accessorylensdiameter: MyString
