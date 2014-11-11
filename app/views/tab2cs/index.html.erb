@@ -1,0 +1,27 @@
+<h1>Listing tab2cs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Sizing information</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tab2cs.each do |tab2c| %>
+      <tr>
+        <td><%= tab2c.productname %></td>
+        <td><%= tab2c.onesizeinfo %></td>
+        <td><%= link_to 'Show', tab2c %></td>
+        <td><%= link_to 'Edit', edit_tab2c_path(tab2c) %></td>
+        <td><%= link_to 'Delete', tab2c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tab2c', new_tab2c_path %>

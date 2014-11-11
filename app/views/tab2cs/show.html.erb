@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Productname:</strong>
+  <%= @tab2c.productname %>
+</p>
+
+<p>
+  <strong>Sizing information:</strong>
+  <%= @tab2c.onesizeinfo %>
+</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_tab2c_path(@tab2c), :class => "btn" %></h3> 
+    </div>
+   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Copy and paste this code in the Shopify HTML editor. This will become the second tab for the product '<%= @tab2c.productname %>'</h3>
+<textarea>
+<li id="tab2">
+  <% if @tab2c.onesizeinfo.present? %>
+  <p><%= @tab2c.onesizeinfo %></p>
+  <% end %>
+  <br/>
+  <a class="zoom" href="http://cdn.shopify.com/s/files/1/0156/6472/files/howtomeasure_1.png?4675" target="_blank">How to measure</a>
+</li>
+      </textarea>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_tab2c_path(@tab2c) %> |
+<%= link_to 'Back', tab2cs_path %>

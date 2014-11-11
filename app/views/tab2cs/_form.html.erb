@@ -1,0 +1,25 @@
+<%= form_for(@tab2c) do |f| %>
+  <% if @tab2c.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tab2c.errors.count, "error") %> prohibited this tab2c from being saved:</h2>
+
+      <ul>
+      <% @tab2c.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :productname %><br>
+    <%= f.text_field :productname %>
+  </div>
+  <div class="field">
+    <%= f.label :onesizeinfo %><br>
+    <%= f.text_area :onesizeinfo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

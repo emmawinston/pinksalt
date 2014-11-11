@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tab2cs
+
   resources :tab2bs
 
   resources :tab2as

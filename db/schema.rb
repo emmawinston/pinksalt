@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111103154) do
+ActiveRecord::Schema.define(version: 20141111105035) do
 
   create_table "tab1s", force: true do |t|
     t.string   "productname"
@@ -48,6 +48,13 @@ ActiveRecord::Schema.define(version: 20141111103154) do
     t.string   "bagheight"
     t.string   "bagdepth"
     t.string   "bagstraplength"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tab2cs", force: true do |t|
+    t.string   "productname"
+    t.text     "onesizeinfo"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

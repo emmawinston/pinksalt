@@ -44,7 +44,10 @@
   <div class="row">
     <div class="col-md-12 centered">
 <h3>Copy and paste this code in the Shopify HTML editor. This is the first tab for the product '<%= @tab1.productname %>'</h3>
-<textarea>
+    </div>
+  </div>
+  <div class="row">
+<textarea class="col-md-9">
 <li id="tab1" class="active"><p><%= @tab1.productparagraph %></p><% if @tab1.bullet1.present? %><ul><% end %><% if @tab1.bullet1.present? %><li><% end %><%= @tab1.bullet1 if @tab1.bullet1.present? %><% if @tab1.bullet1.present? %></li><% end %><% if @tab1.bullet2.present? %><li><% end %><%= @tab1.bullet2 if @tab1.bullet2.present? %><% if @tab1.bullet2.present? %></li><% end %><% if @tab1.bullet3.present? %><li><% end %><%= @tab1.bullet3 if @tab1.bullet3.present? %><% if @tab1.bullet3.present? %></li><% end %><% if @tab1.bullet4.present? %><li><% end %><%= @tab1.bullet4 if @tab1.bullet4.present? %><% if @tab1.bullet4.present? %></li><% end %><% if @tab1.bullet5.present? %><li><% end %><%= @tab1.bullet5 if @tab1.bullet5.present? %><% if @tab1.bullet5.present? %></li><% end %><% if @tab1.bullet1.present? %></ul><% end %><% if @tab1.sku.present? %><b><% end %><%= @tab1.sku %><% if @tab1.sku.present? %></b><% end %></li>
 <!-- PASTE THE SIZING INFORMATION BELOW THIS LINE - DO NOT PUBLISH THE PRODUCT WITHOUT SIZING OR CARE INFORMATION -->
 </textarea>
@@ -59,16 +62,16 @@
 <div class="container">
   <div class="row">
     <div class="col-md-3">
-      <h4>If the product is an item of clothing with specific measurements <%= link_to 'click here', "/tab2s" %> </h3>
+      <h4>If the product is an item of clothing with specific measurements <%= link_to 'click here', "/tab2s", :class => "btn" %> </h3>
     </div>
     <div class="col-md-3">
-      <h4>If the product is a piece of jewellery, watch or belt with specific measurements <%= link_to 'click here', "/tab2as" %></h3>
+      <h4>If the product is a piece of jewellery, watch or belt with specific measurements <%= link_to 'click here', "/tab2as", :class => "btn" %></h3>
     </div>
     <div class="col-md-3">
-      <h4>If the product is a bag with specific measurements <%= link_to 'click here', "/tab2bs" %></h3>
+      <h4>If the product is a bag with specific measurements <%= link_to 'click here', "/tab2bs", :class => "btn" %></h3>
     </div>
     <div class="col-md-3">
-      <h4>If the product is an item of clothing or accessory in one size only without specific measurements</h3>
+      <h4>If the product is an item of clothing or accessory in one size only without specific measurements <%= link_to 'click here', "/tab2cs", :class => "btn" %></h3>
     </div>
   </div>
 </div>
