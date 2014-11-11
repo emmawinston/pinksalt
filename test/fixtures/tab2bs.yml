@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productname: MyString
+  bagwidth: MyString
+  bagheight: MyString
+  bagdepth: MyString
+  bagstraplength: MyString
+
+two:
+  productname: MyString
+  bagwidth: MyString
+  bagheight: MyString
+  bagdepth: MyString
+  bagstraplength: MyString

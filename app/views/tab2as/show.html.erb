@@ -5,7 +5,7 @@
   <%= @tab2a.productname %>
 </p>
 
-<p>
+<!--p>
   <strong>Accessorywidth:</strong>
   <%= @tab2a.accessorywidth %>
 </p>
@@ -53,7 +53,125 @@
 <p>
   <strong>Accessorylensdiameter:</strong>
   <%= @tab2a.accessorylensdiameter %>
-</p>
+</p-->
+
+<table width="100%" cellpadding="3" cellspacing="0">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>One Size</th>
+  </tr>
+  <% if @tab2a.accessorylength.present? %>
+  <tr>
+    <td><b>Length</b></td>
+    <td><%= @tab2a.accessorylength %></td>
+  </tr><% end %> 
+  <% if @tab2a.accessoryminlength.present? %>
+  <tr>
+    <td><b>Min. Length</b></td>
+    <td><%= @tab2a.accessoryminlength %></td>
+  </tr> 
+  <% end %> 
+  <% if @tab2a.accessorymaxlength.present? %>
+  <tr>
+    <td><b>Max. Length</b></td>
+    <td><%= @tab2a.accessorymaxlength %></td>
+  </tr> 
+<% end %> 
+  <% if @tab2a.accessorychainlength.present? %>
+  <tr>
+    <td><b>Chain Length</b></td>
+    <td><%= @tab2a.accessorychainlength %></td>
+  </tr> 
+  <% end %> 
+  <% if @tab2a.accessorypendantwidth.present? %>
+  <tr>
+    <td><b>Pendant width</b></td>
+    <td><%= @tab2a.accessorypendantwidth %></td>
+  </tr> 
+  <% end %> 
+  <% if @tab2a.accessorydiameter.present? %>
+  <tr>
+    <td><b>Diameter</b></td>
+    <td><%= @tab2a.accessorydiameter %></td>
+  </tr> 
+ <% end %> 
+  <% if @tab2a.accessorylensdiameter.present? %>
+  <tr>
+    <td><b>Lens Diameter</b></td>
+    <td><%= @tab2a.accessorylensdiameter %></td>
+  </tr> 
+  <% end %> 
+  </tbody>
+  </table>  
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_tab2a_path(@tab2a), :class => "btn" %></h3> 
+    </div>
+   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Copy and paste this code in the Shopify HTML editor. This will become the second tab for the product '<%= @tab2a.productname %>'</h3>
+<textarea>
+<li id="tab2"><!-- SIZE STARTS HERE -->
+<table width="100%" cellpadding="3" cellspacing="0">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>One Size</th>
+  </tr>
+  <% if @tab2a.accessorylength.present? %>
+  <tr>
+    <td><b>Length</b></td>
+    <td><%= @tab2a.accessorylength %></td>
+  </tr><% end %> 
+  <% if @tab2a.accessoryminlength.present? %>
+  <tr>
+    <td><b>Min. Length</b></td>
+    <td><%= @tab2a.accessoryminlength %></td>
+  </tr> 
+  <% end %> 
+  <% if @tab2a.accessorymaxlength.present? %>
+  <tr>
+    <td><b>Max. Length</b></td>
+    <td><%= @tab2a.accessorymaxlength %></td>
+  </tr> 
+<% end %> 
+  <% if @tab2a.accessorychainlength.present? %>
+  <tr>
+    <td><b>Chain Length</b></td>
+    <td><%= @tab2a.accessorychainlength %></td>
+  </tr> 
+  <% end %> 
+  <% if @tab2a.accessorypendantwidth.present? %>
+  <tr>
+    <td><b>Pendant width</b></td>
+    <td><%= @tab2a.accessorypendantwidth %></td>
+  </tr> 
+  <% end %> 
+  <% if @tab2a.accessorydiameter.present? %>
+  <tr>
+    <td><b>Diameter</b></td>
+    <td><%= @tab2a.accessorydiameter %></td>
+  </tr> 
+ <% end %> 
+  <% if @tab2a.accessorylensdiameter.present? %>
+  <tr>
+    <td><b>Lens Diameter</b></td>
+    <td><%= @tab2a.accessorylensdiameter %></td>
+  </tr> 
+  <% end %> 
+  </tbody>
+  </table>  
+<br/>
+<a class="zoom" href="http://cdn.shopify.com/s/files/1/0156/6472/files/howtomeasure_1.png?4675">How to measure</a></li>
+      </textarea>
 
 <%= link_to 'Edit', edit_tab2a_path(@tab2a) %> |
 <%= link_to 'Back', tab2as_path %>

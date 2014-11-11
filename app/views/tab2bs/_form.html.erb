@@ -1,0 +1,37 @@
+<%= form_for(@tab2b) do |f| %>
+  <% if @tab2b.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tab2b.errors.count, "error") %> prohibited this tab2b from being saved:</h2>
+
+      <ul>
+      <% @tab2b.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :productname %><br>
+    <%= f.text_field :productname %>
+  </div>
+  <div class="field">
+    <%= f.label :bagwidth %><br>
+    <%= f.text_field :bagwidth %>
+  </div>
+  <div class="field">
+    <%= f.label :bagheight %><br>
+    <%= f.text_field :bagheight %>
+  </div>
+  <div class="field">
+    <%= f.label :bagdepth %><br>
+    <%= f.text_field :bagdepth %>
+  </div>
+  <div class="field">
+    <%= f.label :bagstraplength %><br>
+    <%= f.text_field :bagstraplength %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
