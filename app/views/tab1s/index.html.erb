@@ -1,45 +1,45 @@
-<div class="container pt">
-  <div class="row mt">
-    <div class="col-md-12 centered">
-<h3>Product tab: 1</h3>
+<div id="ww">
+  <div class="container pt">
+    <div class="row mt">
+      <div class="col-md-12 centered">
+      <h3>Product tab: 1</h3>
+      </div>
     </div>
-  </div>
-
-<table>
-  <thead>
-    <tr>
-      <th>Product Name</th>
-      <!--th>Product Paragraph</th>
-      <th>Bullet Point 1</th>
-      <th>Bullet Point 2</th>
-      <th>Bullet Point 3</th>
-      <th>Bullet Point 4</th>
-      <th>Bullet Point 5</th>
-      <th>SKU code</th>
-      <th colspan="3"></th-->
-      <th colspan="3">Actions</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @tab1s.each do |tab1| %>
-      <tr>
-        <td><%= tab1.productname %></td>
-        <!--td><%= tab1.productparagraph %></td>
-        <td><%= tab1.bullet1 %></td>
-        <td><%= tab1.bullet2 %></td>
-        <td><%= tab1.bullet3 %></td>
-        <td><%= tab1.bullet4 %></td>
-        <td><%= tab1.bullet5 %></td>
-        <td><%= tab1.sku %></td-->
-        <td><%= link_to 'Show', tab1 %></td>
-        <td><%= link_to 'Edit', edit_tab1_path(tab1) %></td>
-        <td><%= link_to 'Delete', tab1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
+    <div class="row mt">
+      <div class="col-md-12 centered">
+       <table>
+         <thead>
+           <tr>
+             <th>Product Name</th>
+             <!--th>Product Paragraph</th>
+             <th>Bullet Point 1</th>
+             <th>Bullet Point 2</th>
+             <th>Bullet Point 3</th>
+             <th>Bullet Point 4</th>
+             <th>Bullet Point 5</th>
+             <th>SKU code</th>
+             <th colspan="3"></th-->
+             <th colspan="3">Actions</th>
+            </tr>
+           </thead>
+          <tbody>
+          <% @tab1s.each do |tab1| %>
+            <tr>
+              <td><%= tab1.productname %></td>
+              <!--td><%= tab1.productparagraph %></td>
+              <td><%= tab1.bullet1 %></td>
+              <td><%= tab1.bullet2 %></td>
+              <td><%= tab1.bullet3 %></td>
+              <td><%= tab1.bullet4 %></td>
+              <td><%= tab1.bullet5 %></td>
+              <td><%= tab1.sku %></td-->
+              <td><%= link_to 'Show', tab1 %></td>
+              <td><%= link_to 'Edit', edit_tab1_path(tab1) %></td>
+              <td><%= link_to 'Delete', tab1, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+           <% end %>
+          </tbody>
+        </table>
+      </div>
+       <br>
 <%= link_to 'New Tab1', new_tab1_path %>
