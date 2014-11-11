@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Productname</th>
-      <th>Accessorywidth</th>
+      <!--th>Accessorywidth</th>
       <th>Accessorylength</th>
       <th>Accessorydepth</th>
       <th>Accessorystraplength</th>
@@ -13,7 +13,7 @@
       <th>Accessorychainlength</th>
       <th>Accessorypendantwidth</th>
       <th>Accessorydiameter</th>
-      <th>Accessorylensdiameter</th>
+      <th>Accessorylensdiameter</th-->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,7 +22,7 @@
     <% @tab2as.each do |tab2a| %>
       <tr>
         <td><%= tab2a.productname %></td>
-        <td><%= tab2a.accessorywidth %></td>
+        <!--td><%= tab2a.accessorywidth %></td>
         <td><%= tab2a.accessorylength %></td>
         <td><%= tab2a.accessorydepth %></td>
         <td><%= tab2a.accessorystraplength %></td>
@@ -31,10 +31,10 @@
         <td><%= tab2a.accessorychainlength %></td>
         <td><%= tab2a.accessorypendantwidth %></td>
         <td><%= tab2a.accessorydiameter %></td>
-        <td><%= tab2a.accessorylensdiameter %></td>
+        <td><%= tab2a.accessorylensdiameter %></td-->
         <td><%= link_to 'Show', tab2a %></td>
         <td><%= link_to 'Edit', edit_tab2a_path(tab2a) %></td>
-        <td><%= link_to 'Destroy', tab2a, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', tab2a, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
