@@ -1,0 +1,101 @@
+<%= form_for(@tab2d) do |f| %>
+  <% if @tab2d.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tab2d.errors.count, "error") %> prohibited this tab2d from being saved:</h2>
+
+      <ul>
+      <% @tab2d.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :productname %><br>
+    <%= f.text_field :productname %>
+  </div>
+  <div class="field">
+    <%= f.label :shoesavailablein %><br>
+    <%= f.text_field :shoesavailablein %>
+  </div>
+  <div class="field">
+    <%= f.label :modelshoesize %><br>
+    <%= f.text_field :modelshoesize %>
+  </div>
+  <div class="field">
+    <%= f.label :uk3length %><br>
+    <%= f.text_field :uk3length %>
+  </div>
+  <div class="field">
+    <%= f.label :uk4length %><br>
+    <%= f.text_field :uk4length %>
+  </div>
+  <div class="field">
+    <%= f.label :uk5length %><br>
+    <%= f.text_field :uk5length %>
+  </div>
+  <div class="field">
+    <%= f.label :uk6length %><br>
+    <%= f.text_field :uk6length %>
+  </div>
+  <div class="field">
+    <%= f.label :uk7length %><br>
+    <%= f.text_field :uk7length %>
+  </div>
+  <div class="field">
+    <%= f.label :uk8length %><br>
+    <%= f.text_field :uk8length %>
+  </div>
+  <div class="field">
+    <%= f.label :uk3platformheight %><br>
+    <%= f.text_field :uk3platformheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk4platformheight %><br>
+    <%= f.text_field :uk4platformheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk5platformheight %><br>
+    <%= f.text_field :uk5platformheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk6platformheight %><br>
+    <%= f.text_field :uk6platformheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk7platformheight %><br>
+    <%= f.text_field :uk7platformheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk8platformheight %><br>
+    <%= f.text_field :uk8platformheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk3heelmheight %><br>
+    <%= f.text_field :uk3heelmheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk4heelheight %><br>
+    <%= f.text_field :uk4heelheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk5heelheight %><br>
+    <%= f.text_field :uk5heelheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk6heelheight %><br>
+    <%= f.text_field :uk6heelheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk7heelheight %><br>
+    <%= f.text_field :uk7heelheight %>
+  </div>
+  <div class="field">
+    <%= f.label :uk8heelheight %><br>
+    <%= f.text_field :uk8heelheight %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

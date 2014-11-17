@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  productname: MyString
+  shoesavailablein: MyString
+  modelshoesize: MyString
+  uk3length: MyString
+  uk4length: MyString
+  uk5length: MyString
+  uk6length: MyString
+  uk7length: MyString
+  uk8length: MyString
+  uk3platformheight: MyString
+  uk4platformheight: MyString
+  uk5platformheight: MyString
+  uk6platformheight: MyString
+  uk7platformheight: MyString
+  uk8platformheight: MyString
+  uk3heelmheight: MyString
+  uk4heelheight: MyString
+  uk5heelheight: MyString
+  uk6heelheight: MyString
+  uk7heelheight: MyString
+  uk8heelheight: MyString
+
+two:
+  productname: MyString
+  shoesavailablein: MyString
+  modelshoesize: MyString
+  uk3length: MyString
+  uk4length: MyString
+  uk5length: MyString
+  uk6length: MyString
+  uk7length: MyString
+  uk8length: MyString
+  uk3platformheight: MyString
+  uk4platformheight: MyString
+  uk5platformheight: MyString
+  uk6platformheight: MyString
+  uk7platformheight: MyString
+  uk8platformheight: MyString
+  uk3heelmheight: MyString
+  uk4heelheight: MyString
+  uk5heelheight: MyString
+  uk6heelheight: MyString
+  uk7heelheight: MyString
+  uk8heelheight: MyString

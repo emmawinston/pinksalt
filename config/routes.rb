@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tab2ds
+
   get 'pages/info'
 
   resources :tab2cs

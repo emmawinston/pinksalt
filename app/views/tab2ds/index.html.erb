@@ -1,0 +1,65 @@
+<h1>Listing tab2ds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Productname</th>
+      <th>Shoesavailablein</th>
+      <th>Modelshoesize</th>
+      <th>Uk3length</th>
+      <th>Uk4length</th>
+      <th>Uk5length</th>
+      <th>Uk6length</th>
+      <th>Uk7length</th>
+      <th>Uk8length</th>
+      <th>Uk3platformheight</th>
+      <th>Uk4platformheight</th>
+      <th>Uk5platformheight</th>
+      <th>Uk6platformheight</th>
+      <th>Uk7platformheight</th>
+      <th>Uk8platformheight</th>
+      <th>Uk3heelmheight</th>
+      <th>Uk4heelheight</th>
+      <th>Uk5heelheight</th>
+      <th>Uk6heelheight</th>
+      <th>Uk7heelheight</th>
+      <th>Uk8heelheight</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tab2ds.each do |tab2d| %>
+      <tr>
+        <td><%= tab2d.productname %></td>
+        <td><%= tab2d.shoesavailablein %></td>
+        <td><%= tab2d.modelshoesize %></td>
+        <td><%= tab2d.uk3length %></td>
+        <td><%= tab2d.uk4length %></td>
+        <td><%= tab2d.uk5length %></td>
+        <td><%= tab2d.uk6length %></td>
+        <td><%= tab2d.uk7length %></td>
+        <td><%= tab2d.uk8length %></td>
+        <td><%= tab2d.uk3platformheight %></td>
+        <td><%= tab2d.uk4platformheight %></td>
+        <td><%= tab2d.uk5platformheight %></td>
+        <td><%= tab2d.uk6platformheight %></td>
+        <td><%= tab2d.uk7platformheight %></td>
+        <td><%= tab2d.uk8platformheight %></td>
+        <td><%= tab2d.uk3heelmheight %></td>
+        <td><%= tab2d.uk4heelheight %></td>
+        <td><%= tab2d.uk5heelheight %></td>
+        <td><%= tab2d.uk6heelheight %></td>
+        <td><%= tab2d.uk7heelheight %></td>
+        <td><%= tab2d.uk8heelheight %></td>
+        <td><%= link_to 'Show', tab2d %></td>
+        <td><%= link_to 'Edit', edit_tab2d_path(tab2d) %></td>
+        <td><%= link_to 'Destroy', tab2d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tab2d', new_tab2d_path %>
