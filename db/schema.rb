@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141111105035) do
+ActiveRecord::Schema.define(version: 20141117104257) do
 
   create_table "tab1s", force: true do |t|
     t.string   "productname"
@@ -55,6 +55,32 @@ ActiveRecord::Schema.define(version: 20141111105035) do
   create_table "tab2cs", force: true do |t|
     t.string   "productname"
     t.text     "onesizeinfo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tab2ds", force: true do |t|
+    t.string   "productname"
+    t.string   "shoesavailablein"
+    t.string   "modelshoesize"
+    t.string   "uk3length"
+    t.string   "uk4length"
+    t.string   "uk5length"
+    t.string   "uk6length"
+    t.string   "uk7length"
+    t.string   "uk8length"
+    t.string   "uk3platformheight"
+    t.string   "uk4platformheight"
+    t.string   "uk5platformheight"
+    t.string   "uk6platformheight"
+    t.string   "uk7platformheight"
+    t.string   "uk8platformheight"
+    t.string   "uk3heelmheight"
+    t.string   "uk4heelheight"
+    t.string   "uk5heelheight"
+    t.string   "uk6heelheight"
+    t.string   "uk7heelheight"
+    t.string   "uk8heelheight"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
