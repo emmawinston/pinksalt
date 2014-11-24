@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :shippings
+
   resources :tab2ds
 
   get 'pages/info'

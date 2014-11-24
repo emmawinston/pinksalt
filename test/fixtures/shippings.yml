@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shippingtitle: MyString
+  firstline: MyString
+  secondline: MyString
+  thirdline: MyString
+
+two:
+  shippingtitle: MyString
+  firstline: MyString
+  secondline: MyString
+  thirdline: MyString

@@ -1,0 +1,33 @@
+<%= form_for(@shipping) do |f| %>
+  <% if @shipping.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shipping.errors.count, "error") %> prohibited this shipping from being saved:</h2>
+
+      <ul>
+      <% @shipping.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :shippingtitle %><br>
+    <%= f.text_field :shippingtitle %>
+  </div>
+  <div class="field">
+    <%= f.label :firstline %><br>
+    <%= f.text_field :firstline %>
+  </div>
+  <div class="field">
+    <%= f.label :secondline %><br>
+    <%= f.text_field :secondline %>
+  </div>
+  <div class="field">
+    <%= f.label :thirdline %><br>
+    <%= f.text_field :thirdline %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

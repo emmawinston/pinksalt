@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Shippingtitle:</strong>
+  <%= @shipping.shippingtitle %>
+</p>
+
+<p>
+  <strong>Firstline:</strong>
+  <%= @shipping.firstline %>
+</p>
+
+<p>
+  <strong>Secondline:</strong>
+  <%= @shipping.secondline %>
+</p>
+
+<p>
+  <strong>Thirdline:</strong>
+  <%= @shipping.thirdline %>
+</p>
+
+<%= link_to 'Edit', edit_shipping_path(@shipping) %> |
+<%= link_to 'Back', shippings_path %>
