@@ -6,6 +6,59 @@
 </p>
 
 <p>
+  <strong>Available in:</strong>
+  <%= @tab2d.shoesavailablein %>
+</p>
+
+<p>
+  <strong>Model shoe size:</strong>
+  <%= @tab2d.modelshoesize %>
+</p>
+
+<table width="100%" cellpadding="3" cellspacing="0">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>UK3</th>
+    <th>UK4</th>
+    <th>UK5</th>
+    <th>UK6</th>
+    <th>UK7</th>
+    <th>UK8</th>
+  </tr>   
+    <% if @tab2d.uk3length.present? or @tab2d.uk4length.present? or @tab2d.uk5length.present? or @tab2d.uk6length.present? or @tab2d.uk7length.present? or @tab2d.uk8length.present? %>
+  <tr>
+    <td><b>Length</b></td>
+    <td><% if @tab2d.uk3length.present?%><%= @tab2d.uk3length %><% end %></td>
+    <td><% if @tab2d.uk4length.present?%><%= @tab2d.uk4length %><% end %></td>
+    <td><% if @tab2d.uk5length.present?%><%= @tab2d.uk5length %><% end %></td>
+    <td><% if @tab2d.uk6length.present?%><%= @tab2d.uk6length %><% end %></td>
+    <td><% if @tab2d.uk7length.present?%><%= @tab2d.uk7length %><% end %></td>
+    <td><% if @tab2d.uk8length.present?%><%= @tab2d.uk8length %><% end %></td>
+  </tr><% end %> 
+    <% if @tab2d.uk3platformheight.present? or @tab2d.uk4platformheight.present? or @tab2d.uk5platformheight.present? or @tab2d.uk6platformheight.present? or @tab2d.uk7platformheight.present? or @tab2d.uk8platformheight.present? %>
+  <tr>
+    <td><b>Platform Height</b></td>
+    <td><% if @tab2d.uk3platformheight.present?%><%= @tab2d.uk3platformheight %><% end %></td>
+    <td><% if @tab2d.uk4platformheight.present?%><%= @tab2d.uk4platformheight %><% end %></td>
+    <td><% if @tab2d.uk5platformheight.present?%><%= @tab2d.uk5platformheight %><% end %></td>
+    <td><% if @tab2d.uk6platformheight.present?%><%= @tab2d.uk6platformheight %><% end %></td>
+    <td><% if @tab2d.uk7platformheight.present?%><%= @tab2d.uk7platformheight %><% end %></td>
+    <td><% if @tab2d.uk8platformheight.present?%><%= @tab2d.uk8platformheight %><% end %></td>
+  </tr> <% end %> 
+    <% if @tab2d.uk3heelmheight.present? or @tab2d.uk4heelheight.present? or @tab2d.uk5heelheight.present? or @tab2d.uk6heelheight.present? or @tab2d.uk7heelheight.present? or @tab2d.uk8heelheight.present?  %>
+  <tr>
+    <td><b>Heel Height</b></td>
+    <td><%= @tab2d.uk3heelmheight %></td>
+  </tr> <% end %>   
+  </table>
+
+<!--p>
+  <strong>Productname:</strong>
+  <%= @tab2d.productname %>
+</p>
+
+<p>
   <strong>Shoesavailablein:</strong>
   <%= @tab2d.shoesavailablein %>
 </p>
@@ -103,7 +156,7 @@
 <p>
   <strong>Uk8heelheight:</strong>
   <%= @tab2d.uk8heelheight %>
-</p>
+</p-->
 
 <%= link_to 'Edit', edit_tab2d_path(@tab2d) %> |
 <%= link_to 'Back', tab2ds_path %>
