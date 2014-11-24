@@ -1,14 +1,14 @@
-<!--<h1>Listing tab2bs</h1>
+<h1>Listing tab2bs</h1>
 
 <table>
   <thead>
     <tr>
       <th>Productname</th>
-      <!--th>Bagwidth</th>
+      <th>Bagwidth</th>
       <th>Bagheight</th>
       <th>Bagdepth</th>
-      <th>Bagstraplength</th-->
-     <!-- <th colspan="3"></th>
+      <th>Bagstraplength</th>
+     <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -16,11 +16,11 @@
     <% @tab2bs.each do |tab2b| %>
       <tr>
         <td><%= tab2b.productname %></td>
-        <!--td><%= tab2b.bagwidth %></td>
+        <td><%= tab2b.bagwidth %></td>
         <td><%= tab2b.bagheight %></td>
         <td><%= tab2b.bagdepth %></td>
-        <td><%= tab2b.bagstraplength %></td-->
-        <!--td><%= link_to 'Show', tab2b %></td>
+        <td><%= tab2b.bagstraplength %></td>
+        <td><%= link_to 'Show', tab2b %></td>
         <td><%= link_to 'Edit', edit_tab2b_path(tab2b) %></td>
         <td><%= link_to 'Delete', tab2b, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

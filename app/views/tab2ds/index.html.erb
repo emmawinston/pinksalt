@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Productname</th>
-      <th>Shoesavailablein</th>
+      <!--th>Shoesavailablein</th>
       <th>Modelshoesize</th>
       <th>Uk3length</th>
       <th>Uk4length</th>
@@ -23,8 +23,8 @@
       <th>Uk5heelheight</th>
       <th>Uk6heelheight</th>
       <th>Uk7heelheight</th>
-      <th>Uk8heelheight</th>
-      <th colspan="3"></th>
+      <th>Uk8heelheight</th-->
+      <th colspan="3">Actions</th>
     </tr>
   </thead>
 
@@ -32,7 +32,7 @@
     <% @tab2ds.each do |tab2d| %>
       <tr>
         <td><%= tab2d.productname %></td>
-        <td><%= tab2d.shoesavailablein %></td>
+        <!--td><%= tab2d.shoesavailablein %></td>
         <td><%= tab2d.modelshoesize %></td>
         <td><%= tab2d.uk3length %></td>
         <td><%= tab2d.uk4length %></td>
@@ -51,7 +51,7 @@
         <td><%= tab2d.uk5heelheight %></td>
         <td><%= tab2d.uk6heelheight %></td>
         <td><%= tab2d.uk7heelheight %></td>
-        <td><%= tab2d.uk8heelheight %></td>
+        <td><%= tab2d.uk8heelheight %></td-->
         <td><%= link_to 'Show', tab2d %></td>
         <td><%= link_to 'Edit', edit_tab2d_path(tab2d) %></td>
         <td><%= link_to 'Destroy', tab2d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
