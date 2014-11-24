@@ -1,4 +1,7 @@
-<h1>Listing tab2ds</h1>
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <h1>Listing tab2ds</h1>
 
 <table>
   <thead>
@@ -52,9 +55,9 @@
         <td><%= tab2d.uk6heelheight %></td>
         <td><%= tab2d.uk7heelheight %></td>
         <td><%= tab2d.uk8heelheight %></td-->
-        <td><%= link_to 'Show', tab2d %></td>
+        <td><%= link_to 'Show/Get Code', tab2d %></td>
         <td><%= link_to 'Edit', edit_tab2d_path(tab2d) %></td>
-        <td><%= link_to 'Destroy', tab2d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', tab2d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -63,3 +66,6 @@
 <br>
 
 <%= link_to 'New Tab2d', new_tab2d_path %>
+    </div>
+  </div>
+</div>

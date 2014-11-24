@@ -1,12 +1,15 @@
-<h1>Listing shippings</h1>
+<div class="container">
+  <div class="row">
+  <div class="md-col-12">
+    <h1>Listing shippings</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Shippingtitle</th>
-      <th>Firstline</th>
+      <th>Shipping title</th>
+      <!--th>Firstline</th>
       <th>Secondline</th>
-      <th>Thirdline</th>
+      <th>Thirdline</th-->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,12 +18,12 @@
     <% @shippings.each do |shipping| %>
       <tr>
         <td><%= shipping.shippingtitle %></td>
-        <td><%= shipping.firstline %></td>
+        <!--td><%= shipping.firstline %></td>
         <td><%= shipping.secondline %></td>
-        <td><%= shipping.thirdline %></td>
-        <td><%= link_to 'Show', shipping %></td>
+        <td><%= shipping.thirdline %></td-->
+        <td><%= link_to 'Show/Get Code', shipping %></td>
         <td><%= link_to 'Edit', edit_shipping_path(shipping) %></td>
-        <td><%= link_to 'Destroy', shipping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', shipping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,3 +32,6 @@
 <br>
 
 <%= link_to 'New Shipping', new_shipping_path %>
+  </div>
+</div>
+</div>

@@ -1,4 +1,7 @@
-<h1>Listing tab2cs</h1>
+<div class="container">
+  <div class="row">
+    <div class="span12">
+      <h1>Listing tab2cs</h1>
 
 <table>
   <thead>
@@ -14,7 +17,7 @@
       <tr>
         <td><%= tab2c.productname %></td>
         <!--td><%= tab2c.onesizeinfo %></td-->
-        <td><%= link_to 'Show', tab2c %></td>
+        <td><%= link_to 'Show/Get Code', tab2c %></td>
         <td><%= link_to 'Edit', edit_tab2c_path(tab2c) %></td>
         <td><%= link_to 'Delete', tab2c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -25,3 +28,6 @@
 <br>
 
 <%= link_to 'New Tab2c', new_tab2c_path %>
+    </div>
+  </div>
+</div>
