@@ -80,7 +80,7 @@
   <div class="row">
     <div class="col-md-12 centered">
 <h3>Copy and paste this code in the Shopify HTML editor. This will become the second tab for the product '<%= @tab2.productname %>'</h3>
-<textarea>
+<textarea class="col-xs-12" rows="10">
 <li id="tab2"><!-- SIZE STARTS HERE -->
 <table width="100%" cellpadding="3" cellspacing="0">
 <tbody>
@@ -147,4 +147,10 @@
 <%= link_to 'Back', tab2s_path %>
     </div>
   </div>
+  <div class="row">
+  <div class="col-xs-12 centered">
+    <h2>All done!</h2>
+    <a href="../tab1s" class="btn">Create another product description</a>
+  </div>
+</div>
 </div>
