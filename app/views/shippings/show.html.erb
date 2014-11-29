@@ -22,6 +22,121 @@
   <strong>Thirdline:</strong>
   <%= @shipping.thirdline %>
 </p>
+      
+      
+<div class="delivery_info_1 delivery_info">
+  <% if @shipping.shippingtitle.present? %>  
+    <h2 style="text-align: center;"><strong><%= @shipping.shippingtitle %></strong></h2>
+  <% end %>
+<p style="text-align: center;">
+  <% if @shipping.firstline.present? %>
+  <%= @shipping.firstline %>
+  <% end %>
+  <% if @shipping.secondline.present? %>
+  <br /><%= @shipping.secondline %>
+  <% end %>
+  <% if @shipping.thirdline.present? %>
+  <br /><%= @shipping.thirdline %>
+  <% end %>
+</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Copy and paste this code in the Shopify HTML editor on the Shipping page.</h3>
+<textarea class="col-xs-12" rows="10">
+<div class="delivery_info_1 delivery_info">
+  <% if @shipping.shippingtitle.present? %>  
+    <h2 style="text-align: center;"><strong><%= @shipping.shippingtitle %></strong></h2>
+  <% end %>
+<p style="text-align: center;">
+  <% if @shipping.firstline.present? %>
+  <%= @shipping.firstline %>
+  <% end %>
+  <% if @shipping.secondline.present? %>
+  <br /><%= @shipping.secondline %>
+  <% end %>
+  <% if @shipping.thirdline.present? %>
+  <br /><%= @shipping.thirdline %>
+  <% end %>
+</p>
+</div>
+<!-- .shipping_1 -->
+<p> </p>
+<table style="text-align: center;" width="100%" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td>
+<h3>UK DELIVERY</h3>
+<br /> Our standard courier service is <br /> <b>Door to Door service</b>.</td>
+</tr>
+<tr>
+<td><b>Service</b></td>
+<td><b>Fee</b></td>
+<td><b>Delivery</b><br /> working days</td>
+<td><b>Tracking</b></td>
+</tr>
+<tr>
+<td>UK Standard </td>
+<td>£1.99</td>
+<td>3-5 DAYS</td>
+<td><strong>✓</strong></td>
+</tr>
+<tr>
+<td> <br />
+<h3>Need UK Next Day Delivery?</h3>
+<p>Guaranteed next day when order <br /> placed <b>before 12pm </b>excluding Saturdays</p>
+<p><strong>Next Day Delivery is only available on UK orders</strong>. </p>
+</td>
+</tr>
+<tr>
+<td>Next Day </td>
+<td>£9.99</td>
+<td>NEXT DAY DELIVERY</td>
+<td><strong>✓</strong></td>
+</tr>
+<tr>
+<td> <br />
+<h3>INTERNATIONAL DELIVERY</h3>
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+<p> </p>
+<p><b>Standard International Delivery</b></p>
+<p> </p>
+<p><b>Recorded International Delivery </b></p>
+</td>
+<td>
+<p><span style="text-decoration: underline;"><b>EU Countries</b></span></p>
+<p> </p>
+<p>5-7 working days / £3.99</p>
+<p><span style="text-decoration: underline;"><b></b></span><br />5-7 working days / £9.99</p>
+</td>
+<td>
+<p><span style="text-decoration: underline;"><b style="line-height: 1.2;">Rest of the world </b></span></p>
+<p> </p>
+<p>7-14 working days £6.99</p>
+<p><span><b></b></span><br />7-10 working days / £12.99</p>
+</td>
+<td>
+<p><b><b>Tracking</b></b></p>
+<p> </p>
+<p><b><b>x</b></b></p>
+<p> </p>
+<p><strong>✓</strong></p>
+</td>
+</tr>
+</tbody>
+</table>
+<b><br /> <br /> </b>
+<div><b>EU FEE COUNTRIES: </b>Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Georgia, Germany, Gibraltar, Greece, Greenland, Hungary. Iceland, Ireland, Italy, Kazakhstan, Latvia, Lithuania, Luxembourg, Malta, Monaco, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, Uzbekistan. <br />  <br /> <b>THE REST OF WORLD:</b> Countries are not listed on the EU Fee list</div>
+      </textarea>
+    </div>
+  </div>
+ </div>
 
 <%= link_to 'Edit', edit_shipping_path(@shipping) %> |
 <%= link_to 'Back', shippings_path %>
