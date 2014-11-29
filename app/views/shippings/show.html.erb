@@ -40,6 +40,15 @@
   <% end %>
 </p>
 </div>
+      
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 centered">
+<h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_shipping_path(@shipping), :class => "btn" %></h3> 
+    </div>
+   </div>
+</div>
+
 
 <div class="container">
   <div class="row">
@@ -142,4 +151,11 @@
 <%= link_to 'Back', shippings_path %>
     </div>
   </div>
+  
+   <div class="row">
+  <div class="col-xs-12 centered">
+    <h2>All done!</h2>
+    <a href="../shippings" class="btn">Create another shipping box</a>
+  </div>
+</div>
 </div>
