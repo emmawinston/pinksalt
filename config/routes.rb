@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pages/start'
+
   resources :shippings
 
   resources :tab2ds
