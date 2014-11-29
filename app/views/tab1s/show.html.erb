@@ -37,7 +37,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 centered">
+    <div class="col-xs-12 centered">
 <h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_tab1_path(@tab1), :class => "btn" %></h3> 
     </div>
    </div>
@@ -45,36 +45,83 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 centered">
+    <div class="col-xs-12 centered">
 <h3>Copy and paste this code in the Shopify HTML editor. This is the first tab for the product '<%= @tab1.productname %>'</h3>
     </div>
   </div>
   <div class="row">
-<textarea class="col-md-9">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+<textarea class="col-xs-12" rows="10">
 <li id="tab1" class="active"><p><%= @tab1.productparagraph %></p><% if @tab1.bullet1.present? %><ul><% end %><% if @tab1.bullet1.present? %><li><% end %><%= @tab1.bullet1 if @tab1.bullet1.present? %><% if @tab1.bullet1.present? %></li><% end %><% if @tab1.bullet2.present? %><li><% end %><%= @tab1.bullet2 if @tab1.bullet2.present? %><% if @tab1.bullet2.present? %></li><% end %><% if @tab1.bullet3.present? %><li><% end %><%= @tab1.bullet3 if @tab1.bullet3.present? %><% if @tab1.bullet3.present? %></li><% end %><% if @tab1.bullet4.present? %><li><% end %><%= @tab1.bullet4 if @tab1.bullet4.present? %><% if @tab1.bullet4.present? %></li><% end %><% if @tab1.bullet5.present? %><li><% end %><%= @tab1.bullet5 if @tab1.bullet5.present? %><% if @tab1.bullet5.present? %></li><% end %><% if @tab1.bullet1.present? %></ul><% end %><% if @tab1.sku.present? %><b><% end %><%= @tab1.sku %><% if @tab1.sku.present? %></b><% end %></li>
+  
 <!-- PASTE THE SIZING INFORMATION BELOW THIS LINE - DO NOT PUBLISH THE PRODUCT WITHOUT SIZING OR CARE INFORMATION -->
 </textarea>
    </div>
+    <div class="col-xs-3"></div>
 </div>
 <div class="row">
-<div class="col-md-12">
+<div class="col-xs-12">
   <%= link_to 'Edit', edit_tab1_path(@tab1) %> |
   <%= link_to 'Back', tab1s_path %>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      <h4>If the product is an item of clothing with specific measurements <%= link_to 'click here', "/tab2s", :class => "btn" %> </h3>
+    <div class="col-xs-12 text-center"><h2>You're not finished yet!<br/>When you've finished pasting the above code into Shopify, <i>don't click save yet!</i> Choose one of the following options: 
     </div>
-    <div class="col-md-3">
-      <h4>If the product is a piece of jewellery, watch or belt with specific measurements <%= link_to 'click here', "/tab2as", :class => "btn" %></h3>
+    <div class="col-xs-12">
+      &nbsp;
     </div>
-    <div class="col-md-3">
-      <h4>If the product is a bag with specific measurements <%= link_to 'click here', "/tab2bs", :class => "btn" %></h3>
+  </div>
+</div>
+<div class="container container-xs-height">
+  <div class="row row-xs-height">
+    <div class="col-xs-4 col-xs-height">
+      <h4><center>If the product is an item of clothing with specific measurements</center></h4>
     </div>
-    <div class="col-md-3">
-      <h4>If the product is an item of clothing or accessory in one size only without specific measurements <%= link_to 'click here', "/tab2cs", :class => "btn" %></h3>
+    <div class="col-xs-4 col-xs-height">
+      <h4><center>If the product is a piece of jewellery, watch or belt with specific measurements</center></h4>
+    </div>
+    <div class="col-xs-4 col-xs-height">
+      <h4><center>If the product is a bag with specific measurements</center></h4>
+    </div>
+  </div>
+  <div class="row row-xs-height">
+    <div class="col-xs-4 col-xs-height">
+     <%= link_to 'click here', "/tab2s", :class => "btn col-xs-12" %>
+    </div>
+    <div class="col-xs-4 col-xs-height">
+      <%= link_to 'click here', "/tab2as", :class => "btn col-xs-12" %>
+    </div>
+    <div class="col-xs-4 col-xs-height">
+      <%= link_to 'click here', "/tab2bs", :class => "btn col-xs-12" %>
+    </div>
+  </div>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="spacer">
+    </div>
+  </div>
+</div>
+  
+<div class="container container-xs-height">  
+  <div class="row row-xs-height">
+    <div class="col-xs-4 col-xs-height">
+      <h4><center>If the product is one size only without measurements</center></h4>
+    </div>
+    <div class="col-xs-4 col-xs-height">
+      <h4><center>If the product is a shoe</center></h4>
+    </div>
+  </div>
+  <div class="row row-xs-height">
+    <div class="col-xs-4 col-xs-height">
+      <%= link_to 'click here', "/tab2cs", :class => "btn col-xs-12" %>
+    </div>
+    <div class="col-xs-4 col-xs-height">
+      <%= link_to 'click here', "/tab2ds", :class => "btn col-xs-12" %>
     </div>
   </div>
 </div>

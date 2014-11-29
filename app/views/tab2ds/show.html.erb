@@ -4,18 +4,16 @@
       <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Productname:</strong>
+  <strong>Product Name:</strong>
   <%= @tab2d.productname %>
 </p>
 
 <p>
-  <strong>Available in:</strong>
-  <%= @tab2d.shoesavailablein %>
+  <% if @tab2d.shoesavailablein.present? %><%= @tab2d.shoesavailablein %><% end %>
 </p>
 
 <p>
-  <strong>Model shoe size:</strong>
-  <%= @tab2d.modelshoesize %>
+  <% if @tab2d.modelshoesize.present? %><%= @tab2d.modelshoesize %><% end %>
 </p>
 
 <table width="100%" cellpadding="3" cellspacing="0">
@@ -165,9 +163,88 @@
   <strong>Uk8heelheight:</strong>
   <%= @tab2d.uk8heelheight %>
 </p-->
+      
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 centered">
+&nbsp;</h3> 
+    </div>
+   </div>
+  <div class="row">
+    <div class="col-xs-12 centered">
+<h3>Is all of this information correct? If not, you can go back and <%= link_to 'Edit it', edit_tab2d_path(@tab2d), :class => "btn" %></h3> 
+    </div>
+   </div>
+      <div class="row">
+    <div class="col-xs-12 centered">
+&nbsp;</h3> 
+    </div>
+   </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 centered">
+<h3>Copy and paste this code in the Shopify HTML editor. This will become the second tab for the product '<%= @tab2d.productname %>'</h3>
+      <div class="col-xs-12">&nbsp;</div>
+<textarea class="col-xs-12" rows="10">
+<li id="tab2"><!-- SIZE STARTS HERE -->
+  <p><%= @tab2d.shoesavailablein %>. <% if @tab2d.modelshoesize.present? %><%= @tab2d.modelshoesize %>.<% end %></p>
+</p>
+<table width="100%" cellpadding="3" cellspacing="0">
+  <tbody>
+  <tr>
+    <th></th>
+    <th>UK3</th>
+    <th>UK4</th>
+    <th>UK5</th>
+    <th>UK6</th>
+    <th>UK7</th>
+    <th>UK8</th>
+  </tr>   
+    <% if @tab2d.uk3length.present? or @tab2d.uk4length.present? or @tab2d.uk5length.present? or @tab2d.uk6length.present? or @tab2d.uk7length.present? or @tab2d.uk8length.present? %>
+  <tr>
+    <td><b>Length</b></td>
+    <td><% if @tab2d.uk3length.present? %><%= @tab2d.uk3length %><% end %></td>
+    <td><% if @tab2d.uk4length.present? %><%= @tab2d.uk4length %><% end %></td>
+    <td><% if @tab2d.uk5length.present? %><%= @tab2d.uk5length %><% end %></td>
+    <td><% if @tab2d.uk6length.present? %><%= @tab2d.uk6length %><% end %></td>
+    <td><% if @tab2d.uk7length.present? %><%= @tab2d.uk7length %><% end %></td>
+    <td><% if @tab2d.uk8length.present? %><%= @tab2d.uk8length %><% end %></td>
+  </tr><% end %> 
+    <% if @tab2d.uk3platformheight.present? or @tab2d.uk4platformheight.present? or @tab2d.uk5platformheight.present? or @tab2d.uk6platformheight.present? or @tab2d.uk7platformheight.present? or @tab2d.uk8platformheight.present? %>
+  <tr>
+    <td><b>Platform Height</b></td>
+    <td><% if @tab2d.uk3platformheight.present? %><%= @tab2d.uk3platformheight %><% end %></td>
+    <td><% if @tab2d.uk4platformheight.present? %><%= @tab2d.uk4platformheight %><% end %></td>
+    <td><% if @tab2d.uk5platformheight.present? %><%= @tab2d.uk5platformheight %><% end %></td>
+    <td><% if @tab2d.uk6platformheight.present? %><%= @tab2d.uk6platformheight %><% end %></td>
+    <td><% if @tab2d.uk7platformheight.present? %><%= @tab2d.uk7platformheight %><% end %></td>
+    <td><% if @tab2d.uk8platformheight.present? %><%= @tab2d.uk8platformheight %><% end %></td>
+  </tr> <% end %> 
+    <% if @tab2d.uk3heelmheight.present? or @tab2d.uk4heelheight.present? or @tab2d.uk5heelheight.present? or @tab2d.uk6heelheight.present? or @tab2d.uk7heelheight.present? or @tab2d.uk8heelheight.present?  %>
+  <tr>
+    <td><b>Heel Height</b></td>
+    <td><% if @tab2d.uk3heelmheight.present? %><%= @tab2d.uk3heelmheight %><% end %></td>
+    <td><% if @tab2d.uk4heelheight.present? %><%= @tab2d.uk4heelheight %><% end %></td>
+    <td><% if @tab2d.uk5heelheight.present? %><%= @tab2d.uk5heelheight %><% end %></td>
+    <td><% if @tab2d.uk6heelheight.present? %><%= @tab2d.uk6heelheight %><% end %></td>
+    <td><% if @tab2d.uk7heelheight.present? %><%= @tab2d.uk7heelheight %><% end %></td>
+    <td><% if @tab2d.uk8heelheight.present? %><%= @tab2d.uk8heelheight %><% end %></td>
+  </tr> <% end %>   
+  </table>
+<br/>
+<a class="zoom" href="http://cdn.shopify.com/s/files/1/0156/6472/files/howtomeasure_1.png?4675">How to measure</a></li>
+      </textarea>
 
 <%= link_to 'Edit', edit_tab2d_path(@tab2d) %> |
 <%= link_to 'Back', tab2ds_path %>
     </div>
   </div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>All done!</h3>
+    <br/><%= link_to 'Create another product description', edit_tab1s_path(@tab1s), :class => "btn" %>
+  </div>
+</div>
 </div>
