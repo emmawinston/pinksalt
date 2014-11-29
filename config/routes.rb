@@ -13,7 +13,7 @@ Rails.application.routes.draw do
 
   resources :tab2as
 
-  root :to => redirect('/tab1s')  
+  root :to => redirect('pages/start')  
   
   resources :tab2s
 
