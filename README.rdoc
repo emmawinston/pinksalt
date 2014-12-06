@@ -4,4 +4,4 @@ This is Pinksalt, my first independently-built Rails app. Pinksalt was a simple 
 
 Parameters are entered into the forms and, when submitted, generate a raw HTML template which can be pasted into the HTML editor in sections. The user is led to generate the appropriate sizing table by clicking through a flowchart interface. Very, very low-tech. 
 
-I am very aware that the code in this is pretty shocking; I do intend to go back and establish the best-practice methods of accomplishing this (an alternative to conditional logic in views, and ditching scaffolding would be nice for starters) - this was more an experiment than anything else as I wanted to see how quickly I could get a working app off the ground.
+I am very aware that the code in this is pretty shocking; I do intend to go back and establish the best-practice methods of accomplishing this (an alternative to conditional logic in views, and ditching scaffolding would be nice for starters) - this was more an experiment than anything else as I wanted to see how quickly I could get a working app off the ground with virtually no experience in Rails.
